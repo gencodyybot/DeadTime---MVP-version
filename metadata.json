@@ -1,0 +1,6 @@
+{
+  "name": "DeadTime",
+  "description": "A real-time idle capacity marketplace for local businesses and nearby consumers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
