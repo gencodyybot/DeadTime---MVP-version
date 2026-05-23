@@ -29,21 +29,6 @@ No subscriptions. No listing fees. The platform takes a 5% cut only when a deal 
 - **Payments** — Stripe Connect
 - **Auth** — Firebase Auth
 
-## Project structure
-
-app/
-├── ui/
-│   ├── consumer/       # Deal feed, map, claim screens
-│   ├── business/       # Dashboard, deal posting, QR scanner
-│   └── shared/         # Components, theme
-├── data/
-│   ├── models/         # Deal, Business, Claim
-│   ├── repository/     # Firebase data layer
-│   └── remote/         # Cloud Functions calls
-└── utils/
-    ├── location/       # Geofencing, radius filtering
-    └── qr/             # QR generation and validation
-
 ## Color theme
 
 | Token | Hex | Usage |
