@@ -30,3 +30,46 @@ No subscriptions. No listing fees. The platform takes a 5% cut only when a deal 
 - **Auth** — Firebase Auth
 
 ## Project structure
+
+app/
+├── ui/
+│   ├── consumer/       # Deal feed, map, claim screens
+│   ├── business/       # Dashboard, deal posting, QR scanner
+│   └── shared/         # Components, theme
+├── data/
+│   ├── models/         # Deal, Business, Claim
+│   ├── repository/     # Firebase data layer
+│   └── remote/         # Cloud Functions calls
+└── utils/
+    ├── location/       # Geofencing, radius filtering
+    └── qr/             # QR generation and validation
+
+## Color theme
+
+| Token | Hex | Usage |
+|---|---|---|
+| Background | #0E0E0E | App root |
+| Surface | #181818 | Cards, deal tiles |
+| Accent | #F26419 | Buttons, timers, CTAs |
+| Accent text | #FF8040 | Discount %, countdown digits |
+| Text primary | #F5F2EE | Titles, deal names |
+| Text secondary | #888880 | Subtitles, distances |
+| Success | #22C55E | Spots left, earnings |
+| Danger | #EF4444 | Expiring soon, sold out |
+
+## Getting started
+
+1. Clone the repo
+2. Create a Firebase project and drop google-services.json into /app
+3. Enable Realtime Database, Cloud Messaging, and Auth in Firebase console
+4. Add your Google Maps API key to local.properties
+5. Set up a Stripe Connect account and add your publishable key
+6. Run on emulator or physical device (API 26+)
+
+## Status
+
+MVP in development. Currently targeting a single-neighborhood launch in Brampton, ON.
+
+## License
+
+MIT
